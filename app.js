@@ -66,23 +66,77 @@ let data =[
 console.log(data);
 //startgame()
 
-
-
-
-
-
 console.log(data[0].txt)
+
+
+let pts = document.querySelector(".pts");
+let player1 = 0;
+let player2 = 0;
+let text = '';
+
+let playerscore =(parm)=>{
+
+}
+
 
 let playerinput = (userMessage)=>{
     return prompt(userMessage);
 };
-//prompt(data[0].txt);
+
+
+// question /////////////////////////////////
 let firstquest = playerinput(data[0].txt)
+console.log(player1)
 if (firstquest == 2001){
     alert('correct great job')
-    playerinput('question 1 ' + data[1].txt);
+    player1 ++
+    console.log(player1)
+    alert('player one score' + player1)
+    playerinput('question 2 ' + data[1].txt);
+}else{
+    alert('wrong answer')
+    playerinput('question 2 ' + data[1].txt);
+} 
+
+// question  /////////////////////////////////
+if (data[1].txt == 2001){
+    alert('correct great job')
+    player1 ++
+    console.log(player1)
+    alert('player one score' + player1)
+    playerinput('question 3 ' + data[2].txt);
 }else{
     alert('wrong answer')
     
-    playerinput('question 2 ' + data[1].txt);
+    playerinput('question 3 ' + data[2].txt);
 } 
+
+// question  /////////////////////////////////
+if (data[2].txt == 2001){
+    alert('correct great job')
+    player1 ++
+    console.log(player1)
+    alert('player one score' + player1)
+    playerinput('question 4 ' + data[3].txt);
+}else{
+    alert('wrong answer')
+    
+    playerinput('question 4 ' + data[3].txt);
+} 
+
+
+// question  /////////////////////////////////
+if (data[3].txt == 2001){
+    alert('correct great job')
+    player1 ++
+    console.log(player1)
+    alert('player one score' + player1)
+    playerinput('question 5 ' + data[4].txt);
+}else{
+    alert('wrong answer')
+    
+    playerinput('question 5 ' + data[4].txt);
+} 
+
+
+//document.querySelector('.pts').innerHTML(player1);
