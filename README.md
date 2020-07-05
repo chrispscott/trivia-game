@@ -1,2 +1,5 @@
 # trivia-game
-this is my mod 1 final project
+_**this is my mod 1 final project**_
+
+###About
+* This is a trivia game for the sake of the project all correct answers will be the first choice to make testing the program easier.
