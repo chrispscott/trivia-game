@@ -1,8 +1,22 @@
 console.log("trivia game ")
 
-// function  startgame(x){
-//   x = document.getElementById("txtbox").innerHTML=(this.ans[0])
-// };       
+// function  startgame(){
+//     document.getElementById("txtbox").innerHTML=(this.data[0].txt)
+//     console.log(data[0].txt)
+// };   
+
+let btn = document.querySelectorAll('.btn');
+btn.onclick= function(){
+    testing()
+}
+let testing =() =>{
+    console.log('testing boyyyyy')
+}
+
+
+let diaplaytxt ={
+
+};
   
 let data =[
     {
@@ -51,3 +65,24 @@ let data =[
 ]  
 console.log(data);
 //startgame()
+
+
+
+
+
+
+console.log(data[0].txt)
+
+let playerinput = (userMessage)=>{
+    return prompt(userMessage);
+};
+//prompt(data[0].txt);
+let firstquest = playerinput(data[0].txt)
+if (firstquest == 2001){
+    alert('correct great job')
+    playerinput('question 1 ' + data[1].txt);
+}else{
+    alert('wrong answer')
+    
+    playerinput('question 2 ' + data[1].txt);
+} 
