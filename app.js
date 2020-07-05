@@ -1,22 +1,4 @@
 console.log("trivia game ")
-
-// function  startgame(){
-//     document.getElementById("txtbox").innerHTML=(this.data[0].txt)
-//     console.log(data[0].txt)
-// };   
-
-let btn = document.querySelectorAll('.btn');
-btn.onclick= function(){
-    testing()
-}
-let testing =() =>{
-    console.log('testing boyyyyy')
-}
-
-
-let diaplaytxt ={
-
-};
   
 let data =[
     {
@@ -55,34 +37,66 @@ let data =[
         slot4:'Hermione Granger'
     },
     {
-        txt:' Begin round 2',
+        txt:' Begin round 2 Videogame trivia',
         slot1:'next',
         slot2:"next",
         slot3:'next',
         slot4:'next'
     },
+    {
+        txt:'Which videogame is generally considered to be the orginal third-person shooter?',
+        slot1:'Wolfenstein 3D',
+        slot2:'forza',
+        slot3:'halo',
+        slot4:'south park stick of truth'
+    },
+    {
+        txt:'What was the first videogame to feature basketball legend Michael Jordan?',
+        slot1:'Jordan vs Bird',
+        slot2:'nba 2k 2020',
+        slot3:'nba live',
+        slot4:'nba street'
+    },
+    {
+        txt:'The playstation was first designed as a companion to this gaming console',
+        slot1:'Super Nintendo',
+        slot2:'Sega Dreamcast',
+        slot3:'PS5',
+        slot4:'Sega Genesis'
+    },
+    {
+        txt:'When did the playstation first hit store shelves in japan?',
+        slot1:'1994',
+        slot2:'1984',
+        slot3:'1876',
+        slot4:'2020'
+    },
+    {
+        txt:'What year was the Playstation 2 released?',
+        slot1:'2000',
+        slot2:'1990',
+        slot3:'2020',
+        slot4:'1985'
+    },
 
 ]  
 console.log(data);
-//startgame()
-
 console.log(data[0].txt)
 
 
-let pts = document.querySelector(".pts");
+const btn1 = document.getElementById('btn1');
+const btn2 = document.getElementById('btn2');
+const btn3 = document.getElementById('btn3');
+const btn4 = document.getElementById('btn4');
 let player1 = 0;
 let player2 = 0;
-let text = '';
 
-let playerscore =(parm)=>{
-
-}
 
 
 let playerinput = (userMessage)=>{
     return prompt(userMessage);
 };
-
+  
 
 // question /////////////////////////////////
 let firstquest = playerinput(data[0].txt)
@@ -139,4 +153,7 @@ if (data[3].txt == 2001){
 } 
 
 
-//document.querySelector('.pts').innerHTML(player1);
+
+
+
+
