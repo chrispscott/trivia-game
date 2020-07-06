@@ -38,7 +38,7 @@ let data =[
         slot4:'Hermione Granger'
     },
     {
-        txt:' Begin round 2 Videogame trivia',
+        txt:' Begin Videogame trivia  START ROUND?',
         slot1:'START ROUND',
         slot2:"START ROUND",
         slot3:'START ROUND',
@@ -190,17 +190,10 @@ if (data[0].slot1 == 2001){
     playerinput('ROUND 2 ' + data[5].txt);
 } 
 if (data[5].slot1 == "START ROUND"){
-    alert('correct great job')
-    player1 ++
     console.log(player1)
     alert('player one score' + player1)
     playerinput('question 7 ' + data[6].txt);
-}else{
-    alert('wrong answer')
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 7 ' + data[6].txt);
-} 
+};
 if (data[0].slot1 == 2001){
     alert('correct great job')
     player1 ++
@@ -261,21 +254,21 @@ if (data[0].slot1 == 2001){
 
 
 
-let firstquest = playerinput(data[0].txt)
-console.log(player1)
-console.log(player2)
-if (firstquest == 2001){
-    alert('correct great job')
-    player2 ++
-    console.log(player2)
-    alert('player one score ' + player2)
-    playerinput('question 2 ' + data[1].txt);
-}else{
-    alert('wrong answer')
-    console.log(player2)
-    alert('player one score ' + player2)
-    playerinput('question 2 ' + data[1].txt);
-} 
+// // let firstquest = playerinput(data[0].txt)
+// // console.log(player1)
+// // console.log(player2)
+// if (firstquest == 2001){
+//     alert('correct great job')
+//     player2 ++
+//     console.log(player2)
+//     alert('player one score ' + player2)
+//     playerinput('question 2 ' + data[1].txt);
+// }else{
+//     alert('wrong answer')
+//     console.log(player2)
+//     alert('player one score ' + player2)
+//     playerinput('question 2 ' + data[1].txt);
+// } 
 
 
 if (data[0].slot1 == 2001){
@@ -333,17 +326,10 @@ if (data[0].slot1 == 2001){
     playerinput('ROUND 2 ' + data[5].txt);
 } 
 if (data[5].slot1 == "START ROUND"){
-    alert('correct great job')
-    player2 ++
-    console.log(player2)
-    alert('player one score' + player2)
+    console.log(player1)
+    alert('player one score' + player1)
     playerinput('question 7 ' + data[6].txt);
-}else{
-    alert('wrong answer')
-    console.log(player2)
-    alert('player one score' + player2)
-    playerinput('question 7 ' + data[6].txt);
-} 
+};
 if (data[0].slot1 == 2001){
     alert('correct great job')
     player2 ++
