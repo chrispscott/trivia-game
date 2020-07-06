@@ -284,6 +284,7 @@ if (data[0].slot1 == 2001){
     playerinput('question 3 ' + data[2].txt);
 } 
 
+
 // question  /////////////////////////////////
 if (data[0].slot1 == 2001){
     alert('correct great job')
