@@ -104,7 +104,7 @@ let questions = data.length;
 // document.write(data[i]);
 // };
 //
-//created a function to put out promt messages to the user and recieve input
+//created a function to put out promt messages to the user
 let playerinput = (userMessage)=>{
     return prompt(userMessage);
 };
