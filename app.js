@@ -92,6 +92,7 @@ const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
 const btn3 = document.getElementById('btn3');
 const btn4 = document.getElementById('btn4');
+
 //created a variable for player 1 score
 let player1 = 0;
 
