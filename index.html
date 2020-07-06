@@ -15,7 +15,7 @@
             <h3 class="pts">player 2 </h3>
         </div>
         <div class="questionbox">    
-            <p id="txtbox"> hello  this is a pragraph </p>   
+            <p id="txtbox">  </p>   
         </div>
         <div>
             <button id="btn1">answer</button>
@@ -23,10 +23,11 @@
             <button id="btn3">answer</button>
             <button id="btn4">answer</button>
         </div>
-
+        <script>
+            document.getElementById('txtbox').innerHTML = this.data[0].txt;
+        </script>
     </div> 
 </div>
-
 
     <script src="app.js"></script>
 </body>
