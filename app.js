@@ -94,6 +94,7 @@ const btn3 = document.getElementById('btn3');
 const btn4 = document.getElementById('btn4');
 //created a variable for player 1 score
 let player1 = 0;
+
 //created a variable for player 2 score
 let player2 = 0;
 let questions = data.length;
