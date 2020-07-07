@@ -86,13 +86,21 @@ let data =[
 // above i used and array of objects to hold my questions and answers
 console.log(data);
 console.log(data[0].txt)
- 
+ //"sirius black"
 
 const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
 const btn3 = document.getElementById('btn3');
 const btn4 = document.getElementById('btn4');
-
+const ans2 = "sirius black";
+const ans3 = 'The Sorting Hat';
+const ans4 = 'The Forbidden Forest';
+const ans5 = 'Harry Potter';
+const ans6 = 'Wolfenstein 3D';
+const ans7 = 'Jordan vs Bird';
+const ans8 = 'Super Nintendo';
+const ans9 = 1994;
+const ans10 = 2000;
 //created a variable for player 1 score
 let player1 = 0;
 
@@ -119,6 +127,15 @@ let playerinput = (userMessage)=>{
 // };
 
 // question /////////////////////////////////
+let tenquest ='';
+let ninequest ='';
+let eightquest ='';
+let seventhquest ='';
+let sixthquest ='';
+let fifthquest ='';
+let fourthquestion ='';
+let thirdquest ='';
+let secondquestion ='';
 let firstquest = playerinput(data[0].txt)
 console.log(player1)
 if (firstquest == 2001){
@@ -126,261 +143,286 @@ if (firstquest == 2001){
     player1 ++
     console.log(player1)
     alert('player one score ' + player1)
-    playerinput('question 2 ' + data[1].txt);
+    secondquestion=playerinput('question 2 ' + data[1].txt);
 }else{
     alert('wrong answer')
     console.log(player1)
     alert('player one score ' + player1)
-    playerinput('question 2 ' + data[1].txt);
+    secondquestion=playerinput('question 2 ' + data[1].txt);
 } 
 
 // question  /////////////////////////////////
-if (data[0].slot1 == 2001){
+if (secondquestion == "sirius black"){
     alert('correct great job')
     player1 ++
     console.log(player1)
+    document.getElementById('hello').innerHTML = 'chris';
     alert('player one score' + player1)
-    playerinput('question 3 ' + data[2].txt);
+    thirdquest=playerinput('question 3 ' + data[2].txt);
+    //document.getElementById('txtbox').innerHTML = secondquestion;
 }else{
     alert('wrong answer')
     console.log(player1)
     alert('player one score' + player1)
-    playerinput('question 3 ' + data[2].txt);
+    thirdquest=playerinput('question 3 ' + data[2].txt);
 } 
 
 // question  /////////////////////////////////
-if (data[0].slot1 == 2001){
+if (thirdquest  == 'The Sorting Hat'){
     alert('correct great job')
     player1 ++
     console.log(player1)
     alert('player one score' + player1)
-    playerinput('question 4 ' + data[3].txt);
+    fourthquestion=playerinput('question 4 ' + data[3].txt);
 }else{
     alert('wrong answer')
     console.log(player1)
     alert('player one score' + player1)
-    playerinput('question 4 ' + data[3].txt);
-} 
-
-
-// question  /////////////////////////////////
-if (data[0].slot1 == 2001){
-    alert('correct great job')
-    player1 ++
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 5 ' + data[4].txt);
-}else{
-    alert('wrong answer')
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 5 ' + data[4].txt);
-} 
-
-if (data[0].slot1 == 2001){
-    alert('correct great job')
-    player1 ++
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('ROUND 2  ' + data[5].txt);
-}else{
-    alert('wrong answer')
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('ROUND 2 ' + data[5].txt);
-} 
-if (data[5].slot1 == "START ROUND"){
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 7 ' + data[6].txt);
-};
-if (data[0].slot1 == 2001){
-    alert('correct great job')
-    player1 ++
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 7 ' + data[7].txt);
-}else{
-    alert('wrong answer')
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 7 ' + data[7].txt);
-} 
-if (data[0].slot1 == 2001){
-    alert('correct great job')
-    player1 ++
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 7 ' + data[8].txt);
-}else{
-    alert('wrong answer')
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 7 ' + data[8].txt);
-} 
-if (data[0].slot1 == 2001){
-    alert('correct great job')
-    player1 ++
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 7 ' + data[9].txt);
-}else{
-    alert('wrong answer')
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 7 ' + data[9].txt);
-} 
-if (data[0].slot1 == 2001){
-    alert('correct great job')
-    player1 ++
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 7 ' + data[10].txt);
-}else{
-    alert('wrong answer')
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 7 ' + data[10].txt);
-} 
-//player one 
-
-
-
-
-
-
-
-
-
-
-
-// // let firstquest = playerinput(data[0].txt)
-// // console.log(player1)
-// // console.log(player2)
-// if (firstquest == 2001){
-//     alert('correct great job')
-//     player2 ++
-//     console.log(player2)
-//     alert('player one score ' + player2)
-//     playerinput('question 2 ' + data[1].txt);
-// }else{
-//     alert('wrong answer')
-//     console.log(player2)
-//     alert('player one score ' + player2)
-//     playerinput('question 2 ' + data[1].txt);
-// } 
-
-
-if (data[0].slot1 == 2001){
-    alert('correct great job')
-    player2 ++
-    console.log(player2)
-    alert('player one score' + player2)
-    playerinput('question 3 ' + data[2].txt);
-}else{
-    alert('wrong answer')
-    console.log(player2)
-    alert('player one score' + player2)
-    playerinput('question 3 ' + data[2].txt);
+    fourthquestion=playerinput('question 4 ' + data[3].txt);
 } 
 
 
 // question  /////////////////////////////////
-if (data[0].slot1 == 2001){
+if (fourthquestion  == 'The Forbidden Forest'){
+    alert('correct great job')
+    player1 ++
+    console.log(player1)
+    alert('player one score' + player1)
+    fifthquest=playerinput('question 5 ' + data[4].txt);
+}else{
+    alert('wrong answer')
+    console.log(player1)
+    alert('player one score' + player1)
+    fifthquest=playerinput('question 5 ' + data[4].txt);
+} 
+
+if (fifthquest  == 'Harry Potter'){
+    alert('correct great job')
+    player1 ++
+    console.log(player1)
+    alert('player one score' + player1)
+    alert('ROUND 2  ' + data[5].txt);
+    sixthquest=playerinput('question 6 ' + data[6].txt);
+}else{
+    alert('wrong answer')
+    console.log(player1)
+    alert('player one score' + player1)
+    alert('ROUND 2 ' + data[5].txt);
+    sixthquest=playerinput('question 6 ' + data[6].txt);
+} 
+// if (data[5].slot1 == "START ROUND"){
+//     console.log(player1)
+//     alert('player one score' + player1)
+//     playerinput('question 7 ' + data[6].txt);
+// };
+
+if (sixthquest  == 'Wolfenstein 3D'){
+    alert('correct great job')
+    player1 ++
+    console.log(player1)
+    alert('player one score' + player1)
+    seventhquest=playerinput('question 7 ' + data[7].txt);
+}else{
+    alert('wrong answer')
+    console.log(player1)
+    alert('player one score' + player1)
+    seventhquest=playerinput('question 7 ' + data[7].txt);
+} 
+if (seventhquest  == 'Jordan vs Bird'){
+    alert('correct great job')
+    player1 ++
+    console.log(player1)
+    alert('player one score' + player1)
+    eightquest=playerinput('question 8 ' + data[8].txt);
+}else{
+    alert('wrong answer')
+    console.log(player1)
+    alert('player one score' + player1)
+    eightquest=playerinput('question 8 ' + data[8].txt);
+} 
+if (eightquest  == 'Super Nintendo'){
+    alert('correct great job')
+    player1 ++
+    console.log(player1)
+    alert('player one score' + player1)
+    ninequest=playerinput('question 9 ' + data[9].txt);
+}else{
+    alert('wrong answer')
+    console.log(player1)
+    alert('player one score' + player1)
+    ninequest=playerinput('question 9 ' + data[9].txt);
+} 
+if ( ninequest  == 1994){
+    alert('correct great job')
+    player1 ++
+    console.log(player1)
+    alert('player one score' + player1)
+    tenquest=playerinput('question 10 ' + data[10].txt);
+}else{
+    alert('wrong answer')
+    console.log(player1)
+    alert('player one score' + player1)
+    tenquest=playerinput('question 10 ' + data[10].txt);
+} 
+if(tenquest == 2000) {
+    alert('correct great job')
+    player1 ++
+    console.log(player1)
+    alert('player one score' + player1)
+    alert("player2 ready")
+    console.log(player2)
+    firstquest = playerinput(data[0].txt)
+}else{
+    alert('wrong answer')
+    console.log(player1)
+    alert('player one score' + player1)
+    alert("player2 ready")
+    console.log(player2)
+    firstquest = playerinput(data[0].txt)
+}
+// /////////////////////////////////////////////////////////////////////////////////////////
+// =====================================================================================
+// /////////////////////////////////////////////////////////////////////////////////////////
+
+if (firstquest == 2001){
     alert('correct great job')
     player2 ++
     console.log(player2)
+    alert('player one score ' + player2)
+    secondquestion=playerinput('question 2 ' + data[1].txt);
+}else{
+    alert('wrong answer')
+    console.log(player2)
+    alert('player one score ' + player2)
+    secondquestion=playerinput('question 2 ' + data[1].txt);
+} 
+
+
+
+
+if (secondquestion == "sirius black"){
+    alert('correct great job')
+    player2 ++
+    console.log(player2)
+    document.getElementById('hello').innerHTML = 'chris';
     alert('player one score' + player2)
-    playerinput('question 4 ' + data[3].txt);
+    thirdquest=playerinput('question 3 ' + data[2].txt);
+    //document.getElementById('txtbox').innerHTML = secondquestion;
 }else{
     alert('wrong answer')
     console.log(player2)
     alert('player one score' + player2)
-    playerinput('question 4 ' + data[3].txt);
+    thirdquest=playerinput('question 3 ' + data[2].txt);
+} 
+
+
+
+
+if (thirdquest  == 'The Sorting Hat'){
+    alert('correct great job')
+    player2 ++
+    console.log(player2)
+    alert('player one score' + player2)
+    fourthquestion=playerinput('question 4 ' + data[3].txt);
+}else{
+    alert('wrong answer')
+    console.log(player2)
+    alert('player one score' + player2)
+    fourthquestion=playerinput('question 4 ' + data[3].txt);
 } 
 
 
 // question  /////////////////////////////////
-if (data[0].slot1 == 2001){
+if (fourthquestion  == 'The Forbidden Forest'){
     alert('correct great job')
     player2 ++
     console.log(player2)
     alert('player one score' + player2)
-    playerinput('question 5 ' + data[4].txt);
+    fifthquest=playerinput('question 5 ' + data[4].txt);
 }else{
     alert('wrong answer')
     console.log(player2)
     alert('player one score' + player2)
-    playerinput('question 5 ' + data[4].txt);
+    fifthquest=playerinput('question 5 ' + data[4].txt);
 } 
 
-if (data[0].slot1 == 2001){
+if (fifthquest  == 'Harry Potter'){
     alert('correct great job')
     player2 ++
     console.log(player2)
     alert('player one score' + player2)
-    playerinput('ROUND 2  ' + data[5].txt);
+    alert('ROUND 2  ' + data[5].txt);
+    sixthquest=playerinput('question 6 ' + data[6].txt);
 }else{
     alert('wrong answer')
     console.log(player2)
     alert('player one score' + player2)
-    playerinput('ROUND 2 ' + data[5].txt);
+    alert('ROUND 2 ' + data[5].txt);
+    sixthquest=playerinput('question 6 ' + data[6].txt);
 } 
-if (data[5].slot1 == "START ROUND"){
-    console.log(player1)
-    alert('player one score' + player1)
-    playerinput('question 7 ' + data[6].txt);
-};
-if (data[0].slot1 == 2001){
-    alert('correct great job')
-    player2 ++
-    console.log(player2)
-    alert('player one score' + player2)
-    playerinput('question 7 ' + data[7].txt);
-}else{
-    alert('wrong answer')
-    console.log(player2)
-    alert('player one score' + player2)
-    playerinput('question 7 ' + data[7].txt);
-} 
-if (data[0].slot1 == 2001){
-    alert('correct great job')
-    player2 ++
-    console.log(player2)
-    alert('player one score' + player2)
-    playerinput('question 7 ' + data[8].txt);
-}else{
-    alert('wrong answer')
-    console.log(player2)
-    alert('player one score' + player2)
-    playerinput('question 7 ' + data[8].txt);
-} 
-if (data[0].slot1 == 2001){
-    alert('correct great job')
-    player2 ++
-    console.log(player1)
-    alert('player one score' + player2)
-    playerinput('question 7 ' + data[9].txt);
-}else{
-    alert('wrong answer')
-    console.log(player2)
-    alert('player one score' + player2)
-    playerinput('question 7 ' + data[9].txt);
-} 
-if (data[0].slot1 == 2001){
-    alert('correct great job')
-    player2 ++
-    console.log(player2)
-    alert('player one score' + player2)
-    playerinput('question 7 ' + data[10].txt);
-}else{
-    alert('wrong answer')
-    console.log(player2)
-    alert('player one score' + player2)
-    playerinput('question 7 ' + data[10].txt);
-} 
+  
 
 
+if (sixthquest  == 'Wolfenstein 3D'){
+    alert('correct great job')
+    player2 ++
+    console.log(player2)
+    alert('player one score' + player2)
+    seventhquest=playerinput('question 7 ' + data[7].txt);
+}else{
+    alert('wrong answer')
+    console.log(player2)
+    alert('player one score' + player2)
+    seventhquest=playerinput('question 7 ' + data[7].txt);
+} 
+if (seventhquest  == 'Jordan vs Bird'){
+    alert('correct great job')
+    player2 ++
+    console.log(player2)
+    alert('player one score' + player2)
+    eightquest=playerinput('question 8 ' + data[8].txt);
+}else{
+    alert('wrong answer')
+    console.log(player2)
+    alert('player one score' + player2)
+    eightquest=playerinput('question 8 ' + data[8].txt);
+} 
+if (eightquest  == 'Super Nintendo'){
+    alert('correct great job')
+    player2 ++
+    console.log(player2)
+    alert('player one score' + player2)
+    ninequest=playerinput('question 9 ' + data[9].txt);
+}else{
+    alert('wrong answer')
+    console.log(player2)
+    alert('player one score' + player2)
+    ninequest=playerinput('question 9 ' + data[9].txt);
+} 
+if ( ninequest  == 1994){
+    alert('correct great job')
+    player2 ++
+    console.log(player2)
+    alert('player one score' + player2)
+    tenquest=playerinput('question 10 ' + data[10].txt);
+}else{
+    alert('wrong answer')
+    console.log(player2)
+    alert('player one score' + player2)
+    tenquest=playerinput('question 10 ' + data[10].txt);
+} 
+if(tenquest == 2000) {
+    alert('correct great job')
+    player2 ++
+    alert('player one score' + player2)
+    alert("player2 ready")
+    console.log(player2)
+}else{
+    alert('wrong answer')
+    console.log(player2)
+    alert('player one score' + player2)
+    alert("player2 ready")
+}
 
 
 if (player1 > player2){
@@ -402,4 +444,3 @@ if (player1 > player2){
 
 
 
-//startgame();
